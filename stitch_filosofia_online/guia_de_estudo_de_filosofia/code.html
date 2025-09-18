@@ -1,0 +1,149 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
+<div class="flex items-center gap-4 text-[#E5E7EB]">
+<div class="size-6 text-[#E5E7EB]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">FILOSOFIA ONLINE</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6">
+<nav class="flex items-center gap-8">
+<a class="text-[#E5E7EB] text-base font-medium leading-normal transition-colors hover:text-white" href="#">Início</a>
+<a class="text-white text-base font-bold leading-normal transition-colors hover:text-white" href="#">Trilhas do Conhecimento</a>
+<a class="text-[#E5E7EB] text-base font-medium leading-normal transition-colors hover:text-white" href="#">Biblioteca</a>
+<a class="text-[#E5E7EB] text-base font-medium leading-normal transition-colors hover:text-white" href="#">Chat</a>
+<a class="text-[#E5E7EB] text-base font-medium leading-normal transition-colors hover:text-white" href="#">Comunidade</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#283039] text-[#E5E7EB] transition-colors hover:bg-[#343d48] hover:text-white">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjryDLNXGSYyN9psRDaFo_zG_fsl5ue7m9Ivg4KoW8jR52gMOw5VxcYgG-5VNkyTTjbzn7TbI1J-6Qw_gLkmztXW25m8O4mP6uQcwHMlsoISB5dpZonkIoCvZCdT99YpILdoJMkUIrmXYLKlnX7o3ixH05R6G7-i5yMUPaT9cxtfDTuPMtqoa4zTl7mGIVig85d90UaiVt4jCHBVemOBI7rqC6GpMCvHN7AzhGGJuUdi8cKOkB2JzbCRJEjX-wCap0yWyPs_D5Iu8");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-16 px-10">
+<div class="layout-content-container flex w-full max-w-6xl flex-col gap-12">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-5xl font-bold leading-tight text-white">Trilhas do Conhecimento</h1>
+<p class="text-lg font-normal leading-normal text-[#9dabb9]">Crie, personalize e explore roteiros de estudo de filosofia com o poder da IA.</p>
+</div>
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+<div class="flex flex-col gap-6 rounded-xl border border-[#283039] bg-[#1a1e24] p-6">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#3b82f6] text-white">
+<span class="material-symbols-outlined text-2xl"> lightbulb </span>
+</div>
+<h2 class="text-2xl font-bold text-white">1. Defina o Tema</h2>
+</div>
+<p class="text-base text-[#9dabb9]">Comece definindo o tema ou a questão filosófica que você deseja explorar.</p>
+<div class="flex flex-col gap-4">
+<label class="text-base font-medium text-white" for="theme">Seu tema de estudo:</label>
+<input class="w-full rounded-md border border-[#283039] bg-[#111418] px-4 py-2 text-white placeholder:text-[#6b7280] focus:border-[#3b82f6] focus:ring-[#3b82f6]" id="theme" placeholder="Ex: A natureza da consciência" type="text"/>
+<label class="text-base font-medium text-white" for="lessons">Número de lições:</label>
+<input class="w-full rounded-md border border-[#283039] bg-[#111418] px-4 py-2 text-white placeholder:text-[#6b7280] focus:border-[#3b82f6] focus:ring-[#3b82f6]" id="lessons" type="number" value="5"/>
+<button class="flex items-center justify-center gap-2 rounded-md bg-[#3b82f6] py-3 px-4 text-base font-semibold text-white transition-colors hover:bg-[#2563eb]">
+<span class="material-symbols-outlined"> auto_awesome </span>
+<span>Gerar Estrutura com IA</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-6 rounded-xl border border-[#283039] bg-[#1a1e24] p-6 lg:col-span-2">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#3b82f6] text-white">
+<span class="material-symbols-outlined text-2xl"> edit_note </span>
+</div>
+<h2 class="text-2xl font-bold text-white">2. Refine a Estrutura</h2>
+</div>
+<p class="text-base text-[#9dabb9]">A IA gerou uma estrutura inicial. Agora é sua vez de personalizar. Arraste para reordenar, edite o conteúdo, substitua textos e adicione suas próprias notas.</p>
+<div class="flex flex-col gap-4">
+<div class="group rounded-lg bg-[#111418] transition-all duration-300 ease-in-out hover:bg-[#283039]">
+<div class="flex cursor-pointer list-none items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<button class="cursor-grab text-white/50 transition-colors hover:text-white"><span class="material-symbols-outlined"> drag_indicator </span></button>
+<h3 class="text-lg font-semibold text-white">Lição 1: O Problema Mente-Corpo</h3>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> edit </span></button>
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> delete </span></button>
+<button class="text-white transition-transform duration-300"><span class="material-symbols-outlined"> expand_more </span></button>
+</div>
+</div>
+<div class="border-t border-[#283039] p-4">
+<p class="text-base leading-relaxed text-[#9dabb9]">
+<strong class="font-semibold text-white">Pontos-chave:</strong> Dualismo Cartesiano, Monismo, Fisicalismo.
+                      <br/>
+<strong class="font-semibold text-white">Pensadores:</strong> René Descartes, Gilbert Ryle.
+                      <br/>
+<strong class="font-semibold text-white">Textos Sugeridos:</strong> <span class="italic">'Meditações Metafísicas' (II e VI)</span> de Descartes.
+                    </p>
+<textarea class="mt-4 w-full rounded-md border border-[#283039] bg-[#1a1e24] p-2 text-sm text-white placeholder:text-[#6b7280] focus:border-[#3b82f6] focus:ring-[#3b82f6]" placeholder="Adicionar notas pessoais..."></textarea>
+</div>
+</div>
+<div class="group rounded-lg bg-[#111418] transition-all duration-300 ease-in-out hover:bg-[#283039]">
+<div class="flex cursor-pointer list-none items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<button class="cursor-grab text-white/50 transition-colors hover:text-white"><span class="material-symbols-outlined"> drag_indicator </span></button>
+<h3 class="text-lg font-semibold text-white">Lição 2: Qualia e a Experiência Subjetiva</h3>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> edit </span></button>
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> delete </span></button>
+<button class="text-white transition-transform duration-300"><span class="material-symbols-outlined"> expand_more </span></button>
+</div>
+</div>
+</div>
+<div class="group rounded-lg bg-[#111418] transition-all duration-300 ease-in-out hover:bg-[#283039]">
+<div class="flex cursor-pointer list-none items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<button class="cursor-grab text-white/50 transition-colors hover:text-white"><span class="material-symbols-outlined"> drag_indicator </span></button>
+<h3 class="text-lg font-semibold text-white">Lição 3: Consciência e Inteligência Artificial</h3>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> edit </span></button>
+<button class="text-white/70 transition-colors hover:text-white"><span class="material-symbols-outlined"> delete </span></button>
+<button class="text-white transition-transform duration-300"><span class="material-symbols-outlined"> expand_more </span></button>
+</div>
+</div>
+</div>
+<div class="mt-4 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-bold text-white">3. Geração de Conteúdo</h3>
+<div class="flex items-center gap-2">
+<input class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" id="generate-content" type="checkbox"/>
+<label class="text-base text-white" for="generate-content">Gerar conteúdo textual para cada lição (Opcional)</label>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 rounded-md bg-[#16a34a] py-3 px-4 text-base font-semibold text-white transition-colors hover:bg-[#15803d]">
+<span class="material-symbols-outlined"> school </span>
+<span>Iniciar Trilha de Estudo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-solid border-[#283039] py-6 px-10">
+<div class="text-center">
+<p class="text-base text-[#9dabb9]">© 2024 FILOSOFIA ONLINE. Todos os direitos reservados.</p>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

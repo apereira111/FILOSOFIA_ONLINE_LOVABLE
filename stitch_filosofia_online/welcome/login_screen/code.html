@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FILOSOFIA ONLINE - Login</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-blue: #3b82f6;
+      --accent-pink: #ec4899;
+      --background-dark: #121212;
+      --text-light: #e5e7eb;
+      --input-bg: #1f2937;
+    }
+    body {
+      font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;
+    }
+    .form-input {
+        background-color: var(--input-bg);
+        border-color: transparent;
+        color: var(--text-light);
+    }
+    .form-input:focus {
+        --tw-ring-color: var(--primary-blue);
+        border-color: var(--primary-blue);
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-dark)] text-[var(--text-light)]">
+<div class="flex flex-col items-center justify-center min-h-screen p-6">
+<div class="w-full max-w-sm text-center">
+<div class="mb-6">
+<span class="material-symbols-outlined text-7xl text-[var(--accent-pink)]">
+          auto_stories
+        </span>
+</div>
+<h1 class="text-4xl font-bold text-white mb-2">Bem-vindo de volta!</h1>
+<p class="text-lg text-gray-400 mb-8">
+        Faça login para continuar sua jornada de leitura.
+      </p>
+<form class="space-y-6">
+<div>
+<input class="w-full h-12 px-4 rounded-lg form-input placeholder-gray-400" id="email" name="email" placeholder="Email" required="" type="email"/>
+</div>
+<div>
+<input class="w-full h-12 px-4 rounded-lg form-input placeholder-gray-400" id="password" name="password" placeholder="Senha" required="" type="password"/>
+</div>
+<div class="flex items-center justify-end">
+<a class="text-sm text-[var(--accent-pink)] hover:underline" href="#">Esqueceu a senha?</a>
+</div>
+<div>
+<button class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-[var(--primary-blue)] text-white text-lg font-bold shadow-lg shadow-blue-500/20 hover:bg-blue-500 transition-all duration-300 ease-in-out transform hover:scale-105" type="submit">
+<span>Login</span>
+</button>
+</div>
+</form>
+<div class="relative flex items-center py-5">
+<div class="flex-grow border-t border-gray-600"></div>
+<span class="flex-shrink mx-4 text-gray-400">ou</span>
+<div class="flex-grow border-t border-gray-600"></div>
+</div>
+<button class="w-full flex items-center justify-center gap-3 rounded-lg h-12 px-6 border border-gray-600 bg-transparent text-white hover:bg-white/10 transition-all duration-300 ease-in-out">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-1.5c-1.38 0-1.5 0.62-1.5 1.5V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z" fill="#1877F2"></path>
+<path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" fill="url(#google-gradient)"></path>
+<path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" fill="url(#paint0_linear_10_9)"></path>
+<defs>
+<linearGradient id="google-gradient" x1="12" x2="12" y1="2" y2="22">
+<stop offset="0" stop-color="#4285F4"></stop>
+<stop offset="1" stop-color="#34A853"></stop>
+</linearGradient>
+<linearGradient id="paint0_linear_10_9" x1="12" x2="12" y1="2" y2="22">
+<stop stop-color="#FBBC05"></stop>
+<stop offset="1" stop-color="#EA4335"></stop>
+</linearGradient>
+</defs>
+<g clip-path="url(#clip0_10_9)">
+<path d="M12.0001 10.1818C13.2956 10.1818 14.3183 9.15911 14.3183 7.86366C14.3183 6.5682 13.2956 5.54547 12.0001 5.54547C10.7047 5.54547 9.68196 6.5682 9.68196 7.86366C9.68196 9.15911 10.7047 10.1818 12.0001 10.1818Z" fill="white"></path>
+<path d="M16.5455 12C17.5718 12.8712 18.2727 14.1039 18.2727 15.5455C18.2727 16.5455 17.8636 17.4545 17.2273 18.1364C16.5 18.9091 15.5455 19.3636 14.5 19.3636H9.5C8.45455 19.3636 7.5 18.9091 6.77273 18.1364C6.13636 17.4545 5.72727 16.5455 5.72727 15.5455C5.72727 14.1039 6.42818 12.8712 7.45455 12H16.5455Z" fill="white"></path>
+</g>
+<defs>
+<clipPath id="clip0_10_9">
+<rect fill="white" height="14" transform="translate(5 5.5)" width="14"></rect>
+</clipPath>
+</defs></svg>
+<span>Continuar com Google</span>
+</button>
+<div class="mt-8 text-center">
+<p class="text-gray-400">
+          Não tem uma conta?
+          <a class="font-medium text-[var(--primary-blue)] hover:underline" href="#">Criar Conta</a>
+</p>
+</div>
+</div>
+</div>
+
+</body></html>

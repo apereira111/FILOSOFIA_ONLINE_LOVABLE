@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FILOSOFIA ONLINE - Chat com IA</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --background: #111418;
+        --surface: #1e2329;
+        --on-surface: #ffffff;
+        --primary: #0f66bd;
+        --on-primary: #ffffff;
+        --secondary-container: #283039;
+        --on-secondary-container: #e1e3e6;
+        --muted: #9dabb9;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .chat-bubble-ai {
+        @apply bg-[var(--secondary-container)] text-[var(--on-secondary-container)] rounded-t-xl rounded-r-xl;
+      }
+      .chat-bubble-user {
+        @apply bg-[var(--primary)] text-[var(--on-primary)] rounded-t-xl rounded-l-xl;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--on-surface)]">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--secondary-container)] px-6 sm:px-10 py-3">
+<div class="flex items-center gap-4">
+<svg class="h-6 w-6 text-[var(--primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-lg font-bold">FILOSOFIA ONLINE</h1>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="#">Meus Livros</a>
+<a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="#">Explorar</a>
+<a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="#">Comunidade</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[var(--surface)] transition-colors">
+<span class="material-symbols-outlined text-[var(--muted)]"> notifications </span>
+</button>
+<button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAww1gKJk4uZHFSAFXl5Qq5fyS2vRTRyKWOUMg5w2o9-QzD4G31n0vepMZ4eqc15hJ4Aruhcq3rRgACu_41DAVWKk-LcBacL9kQy51_W8IYmMGKIjXdU2eRuil0mb8bccIYOuCH7yQI-J0dB8udA5Jvdie0otwkYGEde-SoYutmcaiDHneIpLWLl80xEiyLQzD-IGwHhF3LCtkI8WYL2YsQR9PMw_6xvFmJY-VQkWVJMJxbeuXo36F_7EyIwP8i16lJQVkd_6PW090");'></div>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col justify-center items-center py-8">
+<div class="w-full max-w-4xl flex flex-col h-full">
+<div class="p-4 text-center">
+<h2 class="text-3xl font-bold tracking-tight">Chat com IA</h2>
+<p class="text-[var(--muted)] mt-1">Conectado ao livro: 'A República' de Platão</p>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-6">
+<div class="flex items-start gap-3 max-w-xl">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPAnuus4XnLCCWglY7EFqF5m3we0VYp7VloGKyDgmBOOv__Sewsz23pM4KYuDtZp-_FLVwSEsNXhXhBCSVLzhVdzImLYtBb8t-drWaqw2iiC3zeherbOGNgaTpCDML1iUeyW9udzFBBegyfLX8glJt-fAavBAPGGsghLlI94PrPveXMYimyk6JdzblZknzEAG13rH1E3uSBXXAQpT04ChuQuwItoco12PazedsL-6dOCbf9XtQjh2sHDvEjmU1x45JzJpmGL3NbUo");'></div>
+<div class="flex flex-col gap-1 items-start">
+<p class="text-[var(--muted)] text-sm font-medium">IA</p>
+<div class="chat-bubble-ai px-4 py-2.5">
+<p class="text-base">Olá! Como posso ajudar você hoje com seus livros?</p>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-end ml-auto max-w-xl">
+<div class="flex flex-col gap-1 items-end">
+<p class="text-[var(--muted)] text-sm font-medium">Ana</p>
+<div class="chat-bubble-user px-4 py-2.5">
+<p class="text-base">Pode me ajudar a entender melhor o conceito de 'O Mito da Caverna' de Platão?</p>
+</div>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLU94Ytfrg1Fsp2ET_7YQfAZ1Sv43PJ1oXgfnqNEMSyXHYA_l2cveaxHBnvtkjqWn1-wAFS5VbS4VhEJ6a1usrfYPHu5k41gxxEffwBBbL01epLAJZbPlKx9jBuV9NH8e2E_VWjVCykTx0lOHuatZpNDCnfdwk51EHAXc1oxa5iJrKf6crRtfR7ZZAbkSQio_Sp3CrgLORq-z84jJ_MxkXrHU9CwFaRTonSFRW2Yn4yt0Ji9gfyvgU9cF_ACOZP16RFhegjAT-yaY");'></div>
+</div>
+<div class="flex items-start gap-3 max-w-xl">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPAnuus4XnLCCWglY7EFqF5m3we0VYp7VloGKyDgmBOOv__Sewsz23pM4KYuDtZp-_FLVwSEsNXhXhBCSVLzhVdzImLYtBb8t-drWaqw2iiC3zeherbOGNgaTpCDML1iUeyW9udzFBBegyfLX8glJt-fAavBAPGGsghLlI94PrPveXMYimyk6JdzblZknzEAG13rH1E3uSBXXAQpT04ChuQuwItoco12PazedsL-6dOCbf9XtQjh2sHDvEjmU1x45JzJpmGL3NbUo");'></div>
+<div class="flex flex-col gap-1 items-start">
+<p class="text-[var(--muted)] text-sm font-medium">IA</p>
+<div class="chat-bubble-ai px-4 py-2.5">
+<p class="text-base leading-relaxed">
+                    Claro, Ana! 'O Mito da Caverna' é uma alegoria que Platão usa para explicar sua teoria das Formas e a natureza da realidade. Imagine prisioneiros acorrentados em uma caverna, vendo apenas sombras projetadas na parede. Essas sombras representam a realidade que a maioria das pessoas percebe, que é apenas uma imitação do mundo real das Formas. Se um prisioneiro escapasse e visse o mundo exterior, ele perceberia que as sombras eram apenas ilusões. No entanto, ao retornar para a caverna e tentar explicar a verdade aos outros, ele seria ridicularizado e não seria acreditado. O mito ilustra a jornada do conhecimento, a dificuldade de aceitar novas ideias que desafiam nossas crenças e a responsabilidade do filósofo em buscar a verdade e compartilhá-la, mesmo que seja impopular.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky bottom-0 bg-[var(--background)] px-4 py-4">
+<div class="relative max-w-4xl mx-auto">
+<form>
+<input class="w-full bg-[var(--surface)] text-[var(--on-surface)] placeholder-[var(--muted)] border-none rounded-lg py-3 pl-4 pr-12 focus:ring-2 focus:ring-[var(--primary)] transition-shadow" placeholder="Digite sua pergunta..." type="text"/>
+<button class="absolute inset-y-0 right-0 flex items-center justify-center px-4 text-[var(--muted)] hover:text-[var(--primary)] transition-colors" type="submit">
+<span class="material-symbols-outlined"> send </span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

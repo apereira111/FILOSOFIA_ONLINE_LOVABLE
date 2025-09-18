@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-blue: #2563eb;
+        --primary-pink: #ec4899;
+      }
+      body {
+        font-family: 'Manrope', 'Noto Sans', sans-serif;
+      }
+      .form-input-container {
+        position: relative;
+      }
+      .form-input-container .material-symbols-outlined {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: #9dabb9;
+      }
+      .form-input {
+        padding-left: 3rem;
+      }
+    </style>
+</head>
+<body class="bg-black">
+<div class="relative flex size-full min-h-screen flex-col text-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-800 px-10 py-4">
+<div class="flex items-center gap-4 text-white">
+<svg fill="none" height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="var(--primary-pink)"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tight">FILOSOFIA ONLINE</h1>
+</div>
+<nav class="flex items-center gap-6 text-sm font-medium text-gray-300">
+<a class="hover:text-white transition-colors" href="#">Início</a>
+<a class="hover:text-white transition-colors" href="#">Livros</a>
+<a class="hover:text-white transition-colors" href="#">Comunidade</a>
+<a class="hover:text-white transition-colors" href="#">Sobre</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-6 bg-gray-800 text-white text-sm font-bold leading-normal tracking-wide hover:bg-gray-700 transition-colors">
+<span>Entrar</span>
+</button>
+</header>
+<main class="flex flex-1 items-center justify-center py-16">
+<div class="w-full max-w-md space-y-6 rounded-2xl bg-gray-900 p-8 shadow-2xl shadow-pink-500/10">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold tracking-tight">Crie sua conta</h2>
+<p class="mt-2 text-sm text-gray-400">Junte-se à nossa comunidade de leitores.</p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div class="form-input-container">
+<span class="material-symbols-outlined">mail</span>
+<input autocomplete="email" class="form-input block w-full rounded-md border-0 bg-gray-800 py-3.5 pr-3 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-500 sm:text-sm sm:leading-6" id="email" name="email" placeholder="E-mail" required="" type="email"/>
+</div>
+<div class="form-input-container">
+<span class="material-symbols-outlined">lock</span>
+<input autocomplete="new-password" class="form-input block w-full rounded-md border-0 bg-gray-800 py-3.5 pr-3 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-500 sm:text-sm sm:leading-6" id="password" name="password" placeholder="Senha" required="" type="password"/>
+</div>
+<div class="form-input-container">
+<span class="material-symbols-outlined">lock_reset</span>
+<input autocomplete="new-password" class="form-input block w-full rounded-md border-0 bg-gray-800 py-3.5 pr-3 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pink-500 sm:text-sm sm:leading-6" id="confirm-password" name="confirm-password" placeholder="Confirmar Senha" required="" type="password"/>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-md bg-[var(--primary-blue)] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105" type="submit">Criar Conta</button>
+</div>
+</form>
+<div class="relative flex items-center">
+<div class="flex-grow border-t border-gray-700"></div>
+<span class="mx-4 flex-shrink text-sm text-gray-400">OU</span>
+<div class="flex-grow border-t border-gray-700"></div>
+</div>
+<div>
+<button class="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-3 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-200 transition-all duration-300 ease-in-out transform hover:scale-105">
+<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.56 12.25C22.56 11.45 22.49 10.68 22.36 9.92H12.27V14.2H18.1C17.84 15.84 16.94 17.25 15.58 18.15V20.89H19.5C21.52 19.09 22.56 16.03 22.56 12.25Z" fill="#4285F4"></path>
+<path d="M12.27 23C15.12 23 17.52 22.14 19.5 20.89L15.58 18.15C14.63 18.79 13.54 19.15 12.27 19.15C9.7 19.15 7.55 17.47 6.75 15.1H2.7V17.92C4.66 21.03 8.18 23 12.27 23Z" fill="#34A853"></path>
+<path d="M6.75 15.1C6.54 14.52 6.42 13.91 6.42 13.29C6.42 12.67 6.54 12.06 6.75 11.48V8.66H2.7C1.96 10.05 1.5 11.64 1.5 13.29C1.5 14.94 1.96 16.53 2.7 17.92L6.75 15.1Z" fill="#FBBC05"></path>
+<path d="M12.27 7.45C13.62 7.45 14.77 7.94 15.7 8.82L19.58 5.03C17.52 3.16 15.12 2 12.27 2C8.18 2 4.66 4.97 2.7 8.66L6.75 11.48C7.55 9.13 9.7 7.45 12.27 7.45Z" fill="#EA4335"></path>
+</svg>
+<span>Entrar com Google</span>
+</button>
+</div>
+<p class="mt-4 text-center text-sm text-gray-400">
+              Já tem uma conta?
+              <a class="font-semibold leading-6 text-[var(--primary-pink)] hover:text-pink-400" href="#">Entrar</a>
+</p>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

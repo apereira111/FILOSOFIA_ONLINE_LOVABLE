@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FILOSOFIA ONLINE - Carregando</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .animate-pulse-subtle {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      .progress-bar {
+        animation: progress 2.5s ease-in-out forwards;
+      }
+    </style>
+</head>
+<body class="bg-black text-white" style="font-family: 'Manrope', sans-serif">
+<div class="flex flex-col items-center justify-center min-h-screen p-4">
+<div class="text-center">
+<h1 class="text-5xl font-bold tracking-wider mb-8 animate-pulse-subtle" style="background-image: linear-gradient(to right, #ffffff, #e2e8f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">FILOSOFIA ONLINE</h1>
+<div class="w-full max-w-sm mx-auto">
+<div class="w-full bg-[#1e1e1e] rounded-full h-2.5">
+<div class="bg-gradient-to-r from-[#007CF0] to-[#FF007A] h-2.5 rounded-full progress-bar"></div>
+</div>
+<p class="text-sm text-gray-400 mt-4">Carregando, um momento...</p>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --brand-blue: #3b82f6;--brand-pink: #ec4899;}
+      body {
+        font-family: 'Manrope', 'Noto Sans', sans-serif;
+      }
+      .bg-brand-blue {
+        background-color: var(--brand-blue);
+      }
+      .text-brand-blue {
+        color: var(--brand-blue);
+      }
+      .border-brand-blue {
+        border-color: var(--brand-blue);
+      }
+      .bg-brand-pink {
+        background-color: var(--brand-pink);
+      }
+      .text-brand-pink {
+        color: var(--brand-pink);
+      }
+      .hover\:bg-brand-pink-dark:hover {
+        background-color: #d63384;}
+    </style>
+</head>
+<body class="bg-black text-white">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-800 px-10 py-5">
+<div class="flex items-center gap-3">
+<svg class="text-brand-blue" fill="none" height="32" viewBox="0 0 48 48" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-2xl font-bold tracking-tight">FILOSOFIA ONLINE</h1>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-base font-medium text-gray-300 hover:text-white transition-colors" href="#">Início</a>
+<a class="text-base font-medium text-gray-300 hover:text-white transition-colors" href="#">Explorar</a>
+<a class="text-base font-medium text-gray-300 hover:text-white transition-colors" href="#">Minha Biblioteca</a>
+<button class="rounded-lg bg-gray-800 px-6 py-2.5 text-base font-semibold text-white transition-colors hover:bg-gray-700">Entrar</button>
+</nav>
+</header>
+<main class="flex flex-1 items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8 rounded-2xl bg-gray-900 p-10 shadow-2xl shadow-brand-blue/10">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold tracking-tight">Redefinir sua senha</h2>
+<p class="mt-2 text-gray-400">Digite seu e-mail para receber o link de redefinição.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="sr-only" for="email">Email</label>
+<input autocomplete="email" class="form-input block w-full rounded-lg border-2 border-gray-700 bg-gray-800 px-4 py-3.5 text-base placeholder-gray-500 transition-colors focus:border-brand-blue focus:outline-none focus:ring-brand-blue" id="email" name="email" placeholder="seu.email@exemplo.com" required="" type="email"/>
+</div>
+<div>
+<button class="group relative flex w-full justify-center rounded-lg border border-transparent bg-brand-pink px-4 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out hover:bg-brand-pink-dark focus:outline-none focus:ring-2 focus:ring-brand-pink focus:ring-offset-2 focus:ring-offset-gray-900" type="submit">Redefinir Senha</button>
+</div>
+</form>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

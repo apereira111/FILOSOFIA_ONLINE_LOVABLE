@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>FILOSOFIA ONLINE</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-blue: #3b82f6;
+      --accent-pink: #ec4899;
+      --soft-pink: #fbcfe8;
+      --light-blue: #dbeafe;
+    }
+    .bg-primary-blue {
+      background-color: var(--primary-blue);
+    }
+    .text-primary-blue {
+      color: var(--primary-blue);
+    }
+    .border-primary-blue {
+      border-color: var(--primary-blue);
+    }
+    .bg-accent-pink {
+      background-color: var(--accent-pink);
+    }
+    .text-accent-pink {
+      color: var(--accent-pink);
+    }
+    .border-accent-pink {
+      border-color: var(--accent-pink);
+    }
+    .hover\:border-primary-blue:hover {
+      border-color: var(--primary-blue);
+    }
+    .hover\:bg-soft-pink:hover {
+        background-color: var(--soft-pink);
+    }
+    .hover\:bg-light-blue:hover {
+        background-color: var(--light-blue);
+    }
+  </style>
+</head>
+<body class="bg-white font-['Newsreader'] text-black">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-3 bg-black text-white">
+<div class="flex items-center gap-4">
+<svg class="size-6 text-primary-blue" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-[-0.015em]">FILOSOFIA ONLINE</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative flex size-10 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-gray-800 hover:text-white">
+<span class="material-symbols-outlined"> notifications </span>
+<span class="absolute top-1 right-1 block h-2.5 w-2.5 rounded-full bg-accent-pink ring-2 ring-black"></span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-gray-800 hover:text-white">
+<span class="material-symbols-outlined"> help </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAT5CU-kdauQNsy9aNtSPCj5p7RrSABvFevFIjDd98FehOM_j3BwDjwJt7KLC5U0rX-kWPlhuNlFUdytEdb5cvFpaZZGZSGqoqO8hJjWM6PizmRb-s8FwiJjXuohC_5W0AfyZXQRGuUVHrx99s0z_qYL0s9wL0u2mHzM6QI037ZtGkY4w4bXAUKHJcPwKbUF5SOEYkIHrHNMiavxwrdO3rcjaOWoIsPHVm1cgZbPZOBXXxfJ9u3SZKS3KRlliROU8fanyP8BmBrEyg");'></div>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center justify-center py-10 bg-white">
+<div class="w-full max-w-2xl px-4">
+<h2 class="mb-8 text-center text-4xl font-bold text-black">Qual livro você deseja baixar?</h2>
+<div class="relative mb-10">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"> search </span>
+<input class="form-input w-full rounded-full border-2 border-gray-300 bg-white py-3 pl-12 pr-4 text-base text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent" placeholder="Nome do livro ou Autor" type="text"/>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<button class="group flex min-h-[140px] flex-col items-center justify-center gap-3 rounded-lg border-2 border-gray-200 bg-white p-6 text-center transition-all hover:border-primary-blue hover:shadow-lg">
+<span class="material-symbols-outlined text-4xl text-primary-blue"> cloud_upload </span>
+<span class="text-lg font-semibold text-black">Baixe Livros</span>
+</button>
+<button class="group flex min-h-[140px] flex-col items-center justify-center gap-3 rounded-lg border-2 border-gray-200 bg-white p-6 text-center transition-all hover:border-accent-pink hover:shadow-lg">
+<span class="material-symbols-outlined text-4xl text-accent-pink"> chat </span>
+<span class="text-lg font-semibold text-black">Converse com a IA</span>
+</button>
+<button class="group flex min-h-[140px] flex-col items-center justify-center gap-3 rounded-lg border-2 border-gray-200 bg-white p-6 text-center transition-all hover:border-primary-blue hover:shadow-lg sm:col-span-2">
+<span class="material-symbols-outlined text-4xl text-primary-blue"> school </span>
+<span class="text-lg font-semibold text-black">Quer começar a estudar Filosofia - passo a passo</span>
+</button>
+<button class="group flex min-h-[140px] flex-col items-center justify-center gap-3 rounded-lg border-2 border-transparent bg-black p-6 text-center text-white transition-all hover:bg-gray-800 sm:col-span-2">
+<span class="material-symbols-outlined text-4xl text-accent-pink"> groups </span>
+<span class="text-lg font-semibold">Comunidade</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
